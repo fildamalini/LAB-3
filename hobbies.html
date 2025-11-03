@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - UTHM Student Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url('img/bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(248, 249, 250, 0.85);
+            min-height: 100vh;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            background-color: #ffffff;
+            min-height: 80px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .logo img {
+            max-height: 60px;
+            width: auto;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            background-color: #ffffff;
+            min-height: 50px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #5a6c7d;
+            font-weight: 500;
+            padding: 12px 24px;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .navigation a:hover {
+            color: #3498db;
+            background-color: #f1f8ff;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            min-height: 120px;
+            width: 100%;
+            background-color: #ffffff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            margin-top: 20px;
+        }
+
+        .hobbies-section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 20px;
+            min-height: 400px;
+            border: 2px solid #e9ecef;
+        }
+
+        .hobbies-section h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 2rem;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .hobby-content {
+            line-height: 1.8;
+            color: #5a6c7d;
+            font-size: 1.1rem;
+        }
+
+        .hobby-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .hobby-content ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .hobby-content li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            background-color: #ffffff;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            min-height: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hobbies-section {
+                padding: 25px;
+            }
+            
+            .hobbies-section h2 {
+                font-size: 1.6rem;
+            }
+            
+            .hobby-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/uthm.png" alt="UTHM Logo">
+        </div>
+
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="campus_life.html">Campus Life</a>
+        </div>
+
+        <div class="header">
+            <h1>Student Profile</h1>
+            <p>Universiti Tun Hussein Onn Malaysia</p>
+        </div>
+<div class="content">
+    <div class="hobbies-section">
+        <h2>My Hobbies & Interests</h2>
+        <div class="hobby-content">
+            <p>Reading has always been my favorite escape from reality. I love diving into fantasy and mystery novels — stories that come alive with rich world-building, clever twists, and complex characters I can truly get lost in. Those are the kinds of books that keep me up at night, flipping pages just to see what happens next. Lately, I've also started exploring classic English literature, and I find the language and timeless storytelling surprisingly captivating.</p>
+            
+            <p>When I'm not reading, I'm probably playing games. I have a soft spot for simulation and cozy games like The Sims 4 and Stardew Valley — the kind that let me build, create, and unwind at my own pace. I enjoy how these games blend creativity with calmness, offering a sense of comfort after a long day. I also like watching streamers play; it's fun seeing how different people approach the same game, and it often gives me new ideas and inspiration.</p>
+            
+            <p>Another big part of my life is digital art. I love illustrating characters and experimenting with colors, light, and atmosphere. Recently, I've developed a growing interest in animation, especially the kind seen in games. The way movement, storytelling, and emotion come together through animation fascinates me, and I hope to learn more about it in the future. It's my way of combining creativity and technology into something that feels alive.</p>
+        </div>
+    </div>
+</div>
+
+        <div class="footer">
+            &copy; Filda 2025
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life - UTHM Student Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url('img/bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(248, 249, 250, 0.85);
+            min-height: 100vh;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            background-color: #ffffff;
+            min-height: 80px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .logo img {
+            max-height: 60px;
+            width: auto;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            background-color: #ffffff;
+            min-height: 50px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #5a6c7d;
+            font-weight: 500;
+            padding: 12px 24px;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .navigation a:hover {
+            color: #3498db;
+            background-color: #f1f8ff;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            min-height: 120px;
+            width: 100%;
+            background-color: #ffffff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            margin-top: 20px;
+        }
+
+        .campus-section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 20px;
+            border: 2px solid #e9ecef;
+        }
+
+        .campus-section h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 2rem;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .campus-content {
+            line-height: 1.8;
+            color: #5a6c7d;
+            font-size: 1.1rem;
+        }
+
+        .campus-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .campus-content ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .campus-content li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            background-color: #ffffff;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            min-height: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .campus-section {
+                padding: 25px;
+            }
+            
+            .campus-section h2 {
+                font-size: 1.6rem;
+            }
+            
+            .campus-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/uthm.png" alt="UTHM Logo">
+        </div>
+
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="campus_life.html">Campus Life</a>
+        </div>
+
+        <div class="header">
+            <h1>Student Profile</h1>
+            <p>Universiti Tun Hussein Onn Malaysia</p>
+        </div>
+
+        <div class="content">
+            <div class="campus-section">
+                <h2>My Campus Life</h2>
+                <div class="campus-content">
+                    <p>My life at Universiti Tun Hussein Onn Malaysia has been an incredible journey of growth, learning, and unforgettable experiences. The campus environment has provided me with countless opportunities to develop both academically and personally.</p>
+                    
+                    <p><strong>Academic Life:</strong> As a Software Engineering student, I've had the privilege of learning from experienced lecturers who are passionate about their fields. The hands-on approach to education here has allowed me to apply theoretical knowledge to real-world projects. I particularly enjoy the collaborative projects where we work in teams to develop software solutions - it's given me valuable experience in teamwork and project management.</p>
+                    
+                    <p><strong>Extracurricular Activities:</strong> I'm actively involved in several student clubs and organizations. Being part of the Computer Club has been especially rewarding, as it allows me to connect with like-minded peers who share my passion for technology. We regularly organize coding workshops and tech talks that help students stay updated with industry trends.</p>
+                    
+                    <p><strong>Campus Events:</strong> UTHM hosts numerous events throughout the year that enrich student life. From technical competitions and hackathons to cultural festivals and sports events, there's always something happening on campus. These events have helped me build lasting friendships and develop leadership skills.</p>
+                    
+                    <p><strong>Future Goals:</strong> As I continue my journey at UTHM, I look forward to taking on more leadership roles in student organizations and participating in research projects. The supportive environment here encourages students to push their boundaries and achieve their full potential.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; Filda 2025
+        </div>
+    </div>
+</body>
+</html>
