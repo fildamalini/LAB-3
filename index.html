@@ -1,134 +1,265 @@
+INDEX
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UTHM Student Profile</title>
     <style>
         * {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url('img/bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
 
         .container {
             display: flex;
             flex-direction: column;
-            background-color: gray;
-            height: 100vh;
+            background-color: rgba(248, 249, 250, 0.85);
+            min-height: 100vh;
             width: 100%;
+            padding: 20px;
         }
 
         .logo {
             display: flex;
             flex-direction: row;
-            background-color: aqua;
-            min-height: 100px;
+            background-color: #ffffff;
+            min-height: 80px;
             width: 100%;
             justify-content: center;
             align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .logo img {
+            max-height: 60px;
+            width: auto;
         }
 
         .navigation {
             display: flex;
             flex-direction: row;
-            background-color: aqua;
+            background-color: #ffffff;
             min-height: 50px;
-            margin-top: 10px;
-            justify-content: space-between;
-            /* align-content: center; */
+            margin-top: 20px;
+            justify-content: center;
             align-items: center;
-            
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .navigation a {
             text-decoration: none;
+            color: #5a6c7d;
+            font-weight: 500;
+            padding: 12px 24px;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .navigation a:hover {
+            color: #3498db;
+            background-color: #f1f8ff;
         }
 
         .header {
             display: flex;
-            flex-direction: row;
-            min-height: 100px;
+            flex-direction: column;
+            min-height: 120px;
             width: 100%;
-            background-color: aqua;
-            margin-top: 10px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
         }
 
         .content {
             display: flex;
             flex-direction: row;
-            min-height: 300px;
-            background-color: red;
-            margin-top: 10px;
+            min-height: 400px;
+            background-color: transparent;
+            margin-top: 20px;
             justify-content: space-between;
-          
+            gap: 20px;
         }
 
         .side_bar {
             display: flex;
             flex-direction: column;
-            background-color: aqua;
-            flex-basis: 20%;
+            background-color: #ffffff;
+            flex-basis: 25%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 25px;
+            color: #5a6c7d;
+            line-height: 1.6;
         }
 
+        .side_bar h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .profile-info {
+            margin-top: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #2c3e50;
+            min-width: 100px;
+        }
+
+        .info-value {
+            color: #5a6c7d;
+        }
 
         .body_area {
             display: flex;
             flex-direction: column;
-            background-color: aqua;
-            flex-basis: 75%;
+            background-color: #ffffff;
+            flex-basis: 73%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 25px;
+            color: #5a6c7d;
+            line-height: 1.6;
+        }
+
+        .body_area h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .section {
+            margin-bottom: 25px;
         }
 
         .footer {
             display: flex;
             flex-direction: row;
-            background-color: aqua;
+            background-color: #ffffff;
             align-items: center;
             justify-content: center;
-            margin-top: 10px;
-            min-height: 50px;
+            margin-top: 20px;
+            min-height: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            color: #7f8c8d;
+            font-size: 0.9rem;
         }
 
-
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            
+            .side_bar, .body_area {
+                flex-basis: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-
         <div class="logo">
-            Logo
+            <img src="img/uthm.png" alt="UTHM Logo">
         </div>
 
         <div class="navigation">
-            <a href="">Home</a>
-            <a href="">Courses</a>
-            <a href="">Contact Us</a>
+            <a href="#biodata">Biodata</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#campus-life">Campus Life</a>
         </div>
 
         <div class="header">
-            <p>Header</p>
+            <h1>Student Profile</h1>
+            <p>Universiti Tun Hussein Onn Malaysia</p>
         </div>
 
         <div class="content">
-
             <div class="side_bar">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, quia.
+                <h3>Quick Profile</h3>
+                <div class="profile-info">
+                    <div class="info-item">
+                        <div class="info-label">Name:</div>
+                        <div class="info-value">Filda Malini Rosli</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Student ID:</div>
+                        <div class="info-value">AI230026</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Faculty:</div>
+                        <div class="info-value">Faculty of Computer Science and Information Technology (FSKTM)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Program:</div>
+                        <div class="info-value">Software Engineering</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Year:</div>
+                        <div class="info-value">Year 3</div>
+                    </div>
+                </div>
             </div>
 
             <div class="body_area">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ullam quisquam tempore id autem blanditiis.
+                <div class="section" id="biodata">
+                    <h3>Biodata</h3>
+                    <p>I am a third Software Engineering student at Universiti Tun Hussein Onn Malaysia. My passion for technology and problem-solving led me to pursue this field, and I'm constantly exploring new programming languages and development frameworks.</p>
+                </div>
+
+                <div class="section" id="hobbies">
+                    <h3>Hobbies & Interests</h3>
+                    <ul>
+                        <li>Reading</li>
+                        <li>Playing games</li>
+                        <li>Digital art</li>
+                    </ul>
+                </div>
             </div>
-
         </div>
-
 
         <div class="footer">
-            &copy Ariffin 2025
+            &copy; Filda 2025
         </div>
-   
-        
     </div>
-
-    
 </body>
 </html>
