@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Georgia', 'Times New Roman', 'Helvetica', serif;
         }
 
         body {
@@ -23,7 +23,7 @@
         .container {
             display: flex;
             flex-direction: column;
-            background-color: rgba(248, 249, 250, 0.85);
+            background-color: rgba(255, 245, 248, 0.92);
             min-height: 100vh;
             width: 100%;
             padding: 20px;
@@ -37,8 +37,9 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(219, 112, 147, 0.1);
+            border: 1px solid #ffe4ec;
         }
 
         .logo img {
@@ -54,22 +55,25 @@
             margin-top: 20px;
             justify-content: center;
             align-items: center;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(219, 112, 147, 0.1);
+            border: 1px solid #ffe4ec;
         }
 
         .navigation a {
             text-decoration: none;
-            color: #5a6c7d;
+            color: #8b5a7c;
             font-weight: 500;
             padding: 12px 24px;
             transition: all 0.3s ease;
-            border-radius: 4px;
+            border-radius: 15px;
+            font-family: 'Helvetica', 'Arial', sans-serif;
         }
 
         .navigation a:hover {
-            color: #3498db;
-            background-color: #f1f8ff;
+            color: #d94b7e;
+            background-color: #fff0f5;
+            transform: translateY(-2px);
         }
 
         .header {
@@ -79,23 +83,25 @@
             width: 100%;
             background-color: #ffffff;
             margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-radius: 25px;
+            box-shadow: 0 4px 20px rgba(219, 112, 147, 0.15);
             justify-content: center;
             align-items: center;
             padding: 20px;
             text-align: center;
+            border: 1px solid #ffe4ec;
         }
 
         .header h1 {
-            font-size: 1.8rem;
-            color: #2c3e50;
+            font-size: 2.2rem;
+            color: #8b5a7c;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .header p {
-            color: #7f8c8d;
-            font-size: 1.1rem;
+            color: #b08e9d;
+            font-size: 1.2rem;
         }
 
         .content {
@@ -107,36 +113,40 @@
 
         .biodata-section {
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 4px 20px rgba(219, 112, 147, 0.15);
+            padding: 30px;
             margin-bottom: 20px;
+            border: 1px solid #ffe4ec;
         }
 
         .biodata-section h2 {
             text-align: center;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #3498db;
+            color: #d94b7e;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ffb6c1;
+            font-size: 1.8rem;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
         }
 
         th, td {
-            border: 1px solid #e0e0e0;
-            padding: 12px 15px;
+            border: 1px solid #ffe4ec;
+            padding: 14px 16px;
             vertical-align: top;
         }
 
         th {
             text-align: left;
-            background-color: #f8f9fa;
-            color: #2c3e50;
+            background-color: #fff5f8;
+            color: #8b5a7c;
             font-weight: 600;
         }
 
@@ -152,38 +162,46 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: 12px;
+            border: 2px solid #ffe4ec;
         }
 
         td:first-child {
             width: 20%;
             font-weight: 600;
-            color: #2c3e50;
+            color: #8b5a7c;
+            background-color: #fff5f8;
         }
 
         td:nth-child(2) {
             width: 20%;
+            color: #b08e9d;
         }
 
         td:nth-child(3) {
             width: 40%;
+            color: #b08e9d;
         }
 
         a {
-            color: #3498db;
+            color: #d94b7e;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         a:hover {
+            color: #b08e9d;
             text-decoration: underline;
         }
 
         ul, ol {
             margin-left: 20px;
+            color: #b08e9d;
         }
 
         li {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
 
         .footer {
@@ -193,11 +211,12 @@
             align-items: center;
             justify-content: center;
             margin-top: 20px;
-            min-height: 60px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            color: #7f8c8d;
-            font-size: 0.9rem;
+            min-height: 70px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(219, 112, 147, 0.1);
+            color: #b08e9d;
+            font-size: 1rem;
+            border: 1px solid #ffe4ec;
         }
 
         @media (max-width: 768px) {
@@ -206,12 +225,20 @@
             }
             
             th, td {
-                padding: 8px 10px;
+                padding: 10px 12px;
             }
             
             .photo {
                 width: 120px;
                 height: 200px;
+            }
+            
+            .biodata-section {
+                padding: 20px;
+            }
+            
+            .biodata-section h2 {
+                font-size: 1.5rem;
             }
         }
     </style>
